@@ -1,5 +1,10 @@
 
-# DNS Analyzer Tool
+# DNS-Benchmark-Tool
+
+A tool to benchmark DNS servers and analyze their performance.  
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=dhruvgaur10&repo=DNS-Benchmark-Tool)](https://github.com/dhruvgaur10/DNS-Benchmark-Tool)
+
 
 A DNS benchmarking and analyzer tool developed using Python and PyQt5. This tool allows users to measure, compare, and analyze the performance of various DNS servers based on real-time latency and response data.
 
@@ -57,3 +62,4 @@ pyinstaller --onefile --windowed main.py
 ## Author
 
 Dhruv Gaur
+
