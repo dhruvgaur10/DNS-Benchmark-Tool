@@ -1,55 +1,67 @@
+# DNS-Benchmark-Tool
 
-# DNS Analyzer Tool
-
-A DNS benchmarking and analyzer tool developed using Python and PyQt5. This tool allows users to measure, compare, and analyze the performance of various DNS servers based on real-time latency and response data.
+A DNS benchmarking and analyzer tool developed using Python and Tkinter. This tool allows users to measure, compare, and analyze the performance of various DNS servers based on real time latency and response data.
 
 ## Features
 
-- Latency measurement for multiple DNS servers.
-- Network ping check for connectivity validation.
-- DNS recommendation based on real-time performance.
-- Side-by-side comparison of tested DNS servers.
-- Manual addition and testing of custom DNS servers.
-- Graphical visualization of results using Matplotlib.
-- Desktop interface built with PyQt5.
-- Standalone executable provided for users who do not wish to install Python.
+- Latency measurement for multiple DNS servers
+- Network ping check for connectivity validation
+- DNS recommendation based on real-time performance
+- Side-by-side comparison of tested DNS servers
+- Manual addition and testing of custom DNS servers
+- Graphical visualization of results using Matplotlib
+- Desktop interface built with Tkinter
+- Automated system DNS configuration with elevated privileges
+- PDF report generation using ReportLab
+- Standalone executable for easy distribution
 
 ## Key Differentiators
 
-- Complete graphical interface; no command-line interaction required.
-- Real-time dynamic graph plotting for immediate visual feedback.
-- DNS recommendations tailored to the user's actual network conditions.
-- Fully standalone executable for easy distribution and usage.
-- Demonstrates complete end-to-end development including GUI, networking, data visualization, and deployment.
+- Complete graphical interface - no command line interaction required
+- Real-time dynamic graph plotting for immediate visual feedback
+- DNS recommendations tailored to user's actual network conditions
+- One-click system DNS update using Windows network utilities (netsh & ipconfig)
+- Fully standalone executable for easy distribution and usage
+- End-to-end solution from analysis to system configuration
+
+## Screenshot
+
+<p align="center">
+  <img src="screenshots/overview.png" alt="DNS Benchmark Tool" width="700">
+</p>
+
+## Tech Stack
+
+- Python
+- Tkinter
+- Matplotlib
+- ReportLab
+- Socket
+- Threading
 
 ## Requirements
 
-1. PyQt5
-2. Matplotlib
+- Python 3.8+
+- Matplotlib
+- Tkinter (included with standard Python installations)
+- ReportLab
 
-## Usage
+## Installation
 
-### Option 1: Use Executable (No Python Required)
-
-1. Download the file: `DNS Analyzer Tool.exe` from this repository.
-2. Double-click the executable to launch the application.
-
-### Option 2 (If Source Code Provided): Run from Source (Python Required)
-
-1. Clone the repository.
-2. Install dependencies:
 ```
+git clone https://github.com/dhruvgaur10/DNS-Benchmark-Tool.git
+cd DNS-Benchmark-Tool
 pip install -r requirements.txt
 ```
-3. Run:
+## Usage
+### Option 1: Run from Source
 ```
 python main.py
 ```
+Option 2: Use Executable
+Download 'DNS Analyzer Tool.exe' from releases and run directly.
 
-## Build Instructions (For Developers)
-
-To generate a standalone executable using PyInstaller:
-
+### Build Executable
 ```
 pyinstaller --onefile --windowed main.py
 ```

@@ -7,6 +7,7 @@ import platform
 import subprocess
 import ctypes
 import os
+import sys  
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from reportlab.lib.pagesizes import A4
