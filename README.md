@@ -58,10 +58,10 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
-Option 2: Use Executable
+### Option 2: Use Executable
 Download 'DNS Analyzer Tool.exe' from releases and run directly.
 
-### Build Executable
+## Build Executable
 ```
 pyinstaller --onefile --windowed main.py
 ```
